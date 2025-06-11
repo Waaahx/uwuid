@@ -2,14 +2,8 @@ package uwuid
 
 import (
     "math/rand"
-    "time"
 )
 var uwuids = [6]string{"UwU", "OwO", "TwT", ":3", ">w<", "^w^"}
-
-
-func init() {
-    rand.Seed(time.Now().UnixNano())
-}
 
 func random() int {
     return rand.Intn(len(uwuids))
