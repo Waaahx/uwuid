@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-    id := uwuid.GenerateUUID()
+    id := uwuid.New()
     fmt.Println("Generated uwuid:", id)
 }
 ```
