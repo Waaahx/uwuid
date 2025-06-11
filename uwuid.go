@@ -10,18 +10,18 @@ func random() int {
 }
 
 func New() string {
-    uwid := ""
+    uwuid := ""
     for i := 0; i < 6; i++ {
-        uwid += uwuids[random()]
+        uwuid += uwuids[random()]
         if i == 0 {
-            uwid += uwuids[random()]
+            uwuid += uwuids[random()]
         }
         if i < 5 {
-            uwid += "-"
+            uwuid += "-"
         } else {
-            uwid += uwuids[random()]
-            uwid += uwuids[random()]
+            uwuid += uwuids[random()]
+            uwuid += uwuids[random()]
         }
     }
-    return uwid
+    return uwuid
 }
